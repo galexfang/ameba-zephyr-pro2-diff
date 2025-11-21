@@ -98,7 +98,7 @@ static int do_dmic_init(uint8_t num_channels)
 
 	struct dmic_cfg cfg = {
 		.streams = &stream,
-		.channel = {.req_num_streams = 1, .req_num_chan = num_channels},
+		.channel = { .req_num_streams = 1, .req_num_chan = num_channels, },
 	};
 
 	cfg.streams[0].pcm_rate = SAMPLE_RATE;
